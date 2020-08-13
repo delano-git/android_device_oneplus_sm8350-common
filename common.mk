@@ -130,6 +130,7 @@ PRODUCT_PACKAGES += \
     fastbootd
 
 # Fingerprint
+TARGET_USES_FOD_ZPOS := true
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service.oplus
 
