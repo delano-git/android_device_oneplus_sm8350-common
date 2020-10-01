@@ -485,5 +485,9 @@ PRODUCT_BOOT_JARS += \
 # Quick Tap
 TARGET_SUPPORTS_QUICK_TAP := true
 
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # Inherit from the proprietary files makefile.
 $(call inherit-product, vendor/oneplus/sm8350-common/sm8350-common-vendor.mk)
