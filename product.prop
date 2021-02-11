@@ -10,5 +10,8 @@ persist.vendor.camera.privapp.list=com.oplus.camera,org.codeaurora.snapcam,com.f
 vendor.camera.aux.packagelist=com.oplus.camera,org.codeaurora.snapcam,com.filmic.filmicpro
 persist.camera.privapp.list=com.oplus.camera,org.codeaurora.snapcam,com.filmic.filmicpro
 
+# FUSE passthrough
+persist.sys.fuse.passthrough.enable=true
+
 # GMS
 ro.opa.device_model_id=ga-oplus-skill-os121-211011
