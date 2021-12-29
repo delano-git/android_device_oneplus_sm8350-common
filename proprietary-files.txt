@@ -628,6 +628,8 @@ vendor/etc/media_profiles_lahaina.xml
 vendor/etc/media_profiles_lahaina_vendor.xml
 vendor/etc/media_profiles_yupik_v1.xml
 vendor/etc/video_system_specs.json
+vendor/etc/seccomp_policy/mediaextractor.policy
+vendor/etc/seccomp_policy/mediaswcodec.policy
 vendor/lib/libqc2vppfilter.so
 vendor/lib/libqcodec2_base.so
 vendor/lib/libqcodec2_basecodec.so
