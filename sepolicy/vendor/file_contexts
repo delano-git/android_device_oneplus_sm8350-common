@@ -1,6 +1,6 @@
 # Binaries
 /(vendor|system/vendor)/bin/opf-service                u:object_r:opf_exec:s0
-/(vendor|system/vendor)/bin/tri-state-key-calibrate    u:object_r:tri-state-key-calibrate_exec:s0
+/(vendor|system/vendor)/bin/tri-state-key_daemon       u:object_r:tri-state-key_daemon_exec:s0
 /(vendor|system/vendor)/bin/wifi-mac-generator         u:object_r:wifi-mac-generator_exec:s0
 
 # Block devices
@@ -32,6 +32,10 @@
 /dev/param                u:object_r:param_device:s0
 /dev/skin_thermal         u:object_r:therm_device:s0
 
+# Display Modes
+/sys/devices/platform/soc/ae00000\.qcom\,mdss_mdp/drm/card0/card0-DSI-1/dimlayer_bl_en    u:object_r:sysfs_dm:s0
+/sys/devices/platform/soc/ae00000\.qcom\,mdss_mdp/drm/card0/card0-DSI-1/hbm               u:object_r:sysfs_dm:s0
+
 # HALs
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.3-service\.oneplus         u:object_r:hal_fingerprint_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.lineage\.powershare@1\.0-service\.oneplus                        u:object_r:hal_lineage_powershare_default_exec:s0
@@ -47,6 +51,9 @@
 
 # Init scripts
 /vendor/bin/init.oplus_chg.sh    u:object_r:vendor_qti_init_shell_exec:s0
+
+# FPS Info
+/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/sde-crtc-0/measured_fps         u:object_r:sysfs_dm:s0
 
 # OP1, OP2 files
 /mnt/vendor/op1(/.*)?    u:object_r:op1_file:s0
@@ -101,3 +108,10 @@
 /sys/devices/virtual/misc/msm_qcelp/wakeup[0-9]+(/.*)? u:object_r:sysfs_wakeup:s0
 /sys/devices/virtual/misc/msm_wma/wakeup[0-9]+(/.*)? u:object_r:sysfs_wakeup:s0
 /sys/devices/virtual/misc/msm_wmapro/wakeup[0-9]+(/.*)? u:object_r:sysfs_wakeup:s0
+
+# Touchpanel
+/proc/touchpanel/game_switch_enable         u:object_r:proc_touchpanel:s0
+/proc/touchpanel/tpedge_limit_enable        u:object_r:proc_touchpanel:s0
+
+# Vibrator
+/sys/devices/platform/soc/88c000.i2c/i2c-10/10-005a/leds/vibrator/level                   u:object_r:sysfs_vibrator:s0
