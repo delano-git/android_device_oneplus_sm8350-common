@@ -176,7 +176,12 @@ public class OnePlusSettings extends PreferenceFragment
         mGameModeSwitch.setOnPreferenceChangeListener(new GameModeSwitch());
 
         mEdgeTouchSwitch = (SwitchPreference) findPreference(KEY_EDGE_TOUCH);
-        mEdgeTouchSwitch.setEnabled(EdgeTouchSwitch.isSupported());
+        if (EdgeTouchSwitch.isSupported()) {
+            mEdgeTouchSwitch.setEnabled(true);
+        } else {
+            mEdgeTouchSwitch.setEnabled(false);
+            mEdgeTouchSwitch.setSummary(getString(R.string.unsupported_feature));
+        }
         mEdgeTouchSwitch.setChecked(EdgeTouchSwitch.isCurrentlyEnabled(getContext()));
         mEdgeTouchSwitch.setOnPreferenceChangeListener(new EdgeTouchSwitch());
 

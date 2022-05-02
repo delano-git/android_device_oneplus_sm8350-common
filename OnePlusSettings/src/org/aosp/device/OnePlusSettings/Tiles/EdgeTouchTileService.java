@@ -34,7 +34,7 @@ public class EdgeTouchTileService extends TileService {
         super.onStartListening();
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(this);
         enabled = EdgeTouchSwitch.isCurrentlyEnabled(this);
-        getQsTile().setState(enabled ? Tile.STATE_ACTIVE : Tile.STATE_INACTIVE);
+        getQsTile().setState(EdgeTouchSwitch.isSupported()? (enabled ? Tile.STATE_ACTIVE : Tile.STATE_INACTIVE) : Tile.STATE_UNAVAILABLE);
         getQsTile().updateTile();
     }
 
