@@ -12,3 +12,9 @@ persist.camera.privapp.list=com.oplus.camera,org.codeaurora.snapcam,com.filmic.f
 
 # GMS
 ro.opa.device_model_id=ga-oplus-skill-os121-211011
+
+# Padding for Gboard from OOS
+ro.com.google.ime.kb_pad_port_l=7
+ro.com.google.ime.kb_pad_port_r=7
+ro.com.google.ime.kb_pad_land_l=14
+ro.com.google.ime.kb_pad_land_r=14
