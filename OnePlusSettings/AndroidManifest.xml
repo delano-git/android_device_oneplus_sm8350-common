@@ -73,7 +73,7 @@
         </receiver>
 
         <!-- DC-Dimming Tile -->
-        <service
+<!--        <service
             android:name="org.nameless.device.OnePlusSettings.Tiles.DCModeTileService"
             android:icon="@drawable/ic_dc_mode"
             android:label="@string/dc_mode_title"
@@ -83,7 +83,7 @@
                 <action
                     android:name="android.service.quicksettings.action.QS_TILE" />
             </intent-filter>
-        </service>
+        </service> -->
 
         <!-- OnePlusSettings Tile -->
         <service

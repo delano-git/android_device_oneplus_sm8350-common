@@ -53,7 +53,7 @@ public class MainSettings extends PreferenceFragment
         implements Preference.OnPreferenceChangeListener {
 
     public static final String KEY_MUTE_MEDIA = "mute_media";
-    public static final String KEY_DC_SWITCH = "dc_dim";
+/*    public static final String KEY_DC_SWITCH = "dc_dim"; */
     public static final String KEY_AUTO_HBM_SWITCH = "auto_hbm";
     public static final String KEY_AUTO_HBM_THRESHOLD = "auto_hbm_threshold";
     public static final String KEY_HBM_SWITCH = "hbm";
@@ -71,7 +71,7 @@ public class MainSettings extends PreferenceFragment
     private ListPreference mNrModeSwitcher;
     private Preference mDozeSettings;
     private SwitchPreference mMuteMedia;
-    private SwitchPreference mDCModeSwitch;
+/*    private SwitchPreference mDCModeSwitch; */
     private SwitchPreference mAutoHBMSwitch;
     private SwitchPreference mHBMModeSwitch;
     private SwitchPreference mFpsInfo;
@@ -113,7 +113,7 @@ public class MainSettings extends PreferenceFragment
         mMuteMedia.setChecked(VolumeUtils.isCurrentlyEnabled(context));
         mMuteMedia.setOnPreferenceChangeListener(this);
 
-        mDCModeSwitch = (SwitchPreference) findPreference(KEY_DC_SWITCH);
+/*        mDCModeSwitch = (SwitchPreference) findPreference(KEY_DC_SWITCH);
         DCModeSwitch = SwitchUtils.getDCModeSwitch(context, mDCModeSwitch);
         if (DCModeSwitch.isSupported()) {
             mDCModeSwitch.setEnabled(true);
@@ -122,7 +122,7 @@ public class MainSettings extends PreferenceFragment
             mDCModeSwitch.setSummary(getString(R.string.unsupported_feature));
         }
         mDCModeSwitch.setChecked(DCModeSwitch.isCurrentlyEnabled());
-        mDCModeSwitch.setOnPreferenceChangeListener(DCModeSwitch);
+        mDCModeSwitch.setOnPreferenceChangeListener(DCModeSwitch); */
 
         mHBMModeSwitch = (SwitchPreference) findPreference(KEY_HBM_SWITCH);
         HBMModeSwitch = SwitchUtils.getHBMModeSwitch(context, mHBMModeSwitch);

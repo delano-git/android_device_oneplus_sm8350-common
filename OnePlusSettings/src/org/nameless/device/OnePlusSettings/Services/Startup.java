@@ -43,9 +43,9 @@ public class Startup extends BroadcastReceiver {
         enabled = sharedPrefs.getBoolean(MainSettings.KEY_MUTE_MEDIA, false);
         VolumeUtils.setEnabled(context, enabled);
 
-        enabled = sharedPrefs.getBoolean(MainSettings.KEY_DC_SWITCH, false);
+/*        enabled = sharedPrefs.getBoolean(MainSettings.KEY_DC_SWITCH, false);
         modeSwitch = SwitchUtils.getDCModeSwitch(context);
-        if (enabled) modeSwitch.setEnabled(true);
+        if (enabled) modeSwitch.setEnabled(true); */
 
         enabled = sharedPrefs.getBoolean(MainSettings.KEY_HBM_SWITCH, false);
         modeSwitch = SwitchUtils.getHBMModeSwitch(context);
