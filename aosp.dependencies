@@ -1,0 +1,10 @@
+[
+  {
+    "repository": "hardware_oplus",
+    "target_path": "hardware/oplus"
+  },
+  {
+    "repository": "kernel_oneplus_sm8350",
+    "target_path": "kernel/oneplus/sm8350"
+  }
+]
