@@ -301,6 +301,10 @@ PRODUCT_PACKAGES += \
     OPlusSystemUIResCommon \
     WifiResTarget
 
+# OnePlusSettings
+PRODUCT_PACKAGES += \
+    OnePlusSettings
+
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
