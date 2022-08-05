@@ -312,9 +312,6 @@ PRODUCT_PACKAGES += \
     OPlusSettingsResCommon \
     WifiResTarget
 
-# Oplus Camera 
-$(call inherit-product, device/oneplus/camera/camera.mk)
-
 # OnePlus Settings
 PRODUCT_PACKAGES += \
     OnePlusSettings
