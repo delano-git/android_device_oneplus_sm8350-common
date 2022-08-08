@@ -40,6 +40,7 @@ void vendor_load_properties() {
         case 11: // CN
             if (device == "OnePlus9") {
                 OverrideProperty("ro.product.product.model", "LE2110");
+                OverrideProperty("ro.wireless.powershare.force_disable", "1");
             } else if (device == "OnePlus9Pro") {
                 OverrideProperty("ro.product.product.model", "LE2120");
             }
@@ -54,6 +55,7 @@ void vendor_load_properties() {
         case 13: // IN
             if (device == "OnePlus9") {
                 OverrideProperty("ro.product.product.model", "LE2111");
+                OverrideProperty("ro.wireless.powershare.force_disable", "1");
             } else if (device == "OnePlus9Pro") {
                 OverrideProperty("ro.product.product.model", "LE2121");
             }
