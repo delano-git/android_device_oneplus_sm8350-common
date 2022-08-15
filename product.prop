@@ -15,3 +15,7 @@ persist.sys.fuse.passthrough.enable=true
 
 # GMS
 ro.opa.device_model_id=ga-oplus-skill-os121-211011
+
+# Google Lens
+ro.com.google.lens.oem_camera_package=com.oplus.camera
+ro.com.google.lens.oem_image_package=com.oneplus.gallery
