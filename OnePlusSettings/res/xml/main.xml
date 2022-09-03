@@ -150,9 +150,9 @@
             android:title="@string/vib_strength_title_head"
             android:summary="@string/vib_strength_summary_head"
             android:persistent="true"
-            android:max="3"
+            android:max="5"
             android:min="0"
             settings:units=""
-            android:defaultValue="3" />
+            android:defaultValue="4" />
     </PreferenceCategory>
 </PreferenceScreen>
