@@ -12,4 +12,7 @@
     <bool name="config_statusBarBurnInProtection">true</bool>
     <integer name="config_shift_interval">40</integer>
 
+    <!-- Preferred max refresh rate at keyguard, if supported by the display. -->
+    <integer name="config_keyguardMaxRefreshRate">60</integer>
+
 </resources>
