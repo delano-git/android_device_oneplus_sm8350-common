@@ -78,6 +78,13 @@ on init
 on post-fs
     chmod 0755 /sys/kernel/debug/tracing
 
+    # Hyper Touch
+    chown system system /proc/touchpanel/game_switch_enable
+
+    # TP Edge Touch Limit
+    chown system system /proc/touchpanel/oplus_tp_direction
+    write /proc/touchpanel/oplus_tp_direction 0
+
     # Vibration
     chown system system /sys/class/leds/vibrator/level
 
