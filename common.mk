@@ -5,7 +5,9 @@
 #
 
 # A/B
-$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/compression_with_xor.mk)
+PRODUCT_VIRTUAL_AB_COMPRESSION_METHOD := gz
+PRODUCT_VENDOR_PROPERTIES += ro.virtual_ab.compression.threads=true
 
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
