@@ -214,4 +214,7 @@
 
     <!-- Preferred max refresh rate at keyguard, if supported by the display. -->
     <integer name="config_keyguardMaxRefreshRate">60</integer>
+
+    <!-- Auto-brightness sensor type string -->
+    <string name="config_displayLightSensorType">android.sensor.light</string>
 </resources>
