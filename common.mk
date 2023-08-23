@@ -200,6 +200,9 @@ PRODUCT_PACKAGES += \
 # Kernel
 PRODUCT_ENABLE_UFFD_GC := false
 
+# Recovery
+TARGET_USES_AOSP_RECOVERY := true
+
 # Lineage Health
 PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
