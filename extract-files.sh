@@ -68,6 +68,9 @@ function blob_fixup() {
             sed -i "/SystemCamera = / s/1;/0;/g" "${2}"
             sed -i "/SystemCamera = / s/0;$/1;/" "${2}"
             ;;
+        odm/etc/camera/config/oplus_camera_config)
+            sed -i '/"VendorTag": "com.oplus.feature.video.4k.60fps.support"/{n;n;n;s/"Value": "1"/"Value": "0"/}' "${2}"
+            ;;
         product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml)
             sed -i "s/\/my_product/\/product/" "${2}"
             ;;
