@@ -74,6 +74,9 @@ function blob_fixup() {
         odm/etc/dolby/multimedia_dolby_dax_default.xml)
             sed -i "/volume-leveler-enable/ s/true/false/g" "${2}"
             ;;
+        product/app/PowerOffAlarm/PowerOffAlarm.apk)
+            apktool_patch "${2}" "${MY_DIR}/blob-patches/PowerOffAlarm.patch" -s
+            ;;
         product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml)
             sed -i "s/\/my_product/\/product/" "${2}"
             ;;
