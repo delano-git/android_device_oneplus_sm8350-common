@@ -201,6 +201,9 @@ PRODUCT_PACKAGES += \
 # Kernel
 PRODUCT_ENABLE_UFFD_GC := false
 
+# Scudo
+PRODUCT_DISABLE_SCUDO := false
+
 # Recovery
 TARGET_USES_AOSP_RECOVERY := true
 
