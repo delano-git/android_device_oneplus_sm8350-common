@@ -311,6 +311,8 @@ $(call inherit-product, hardware/oplus/oplus-fwk/oplus-fwk.mk)
 PRODUCT_PACKAGES += \
     android.hardware.thermal-service.qti
 
+$(call soong_config_set,qti_thermal,netlink,false)
+
 # Touch
 PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.oplus
