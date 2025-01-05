@@ -247,6 +247,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti
 
+# QCOM
+TARGET_BOARD_PLATFORM := lahaina
+
 # QTI fwk-detect
 PRODUCT_PACKAGES += \
     libvndfwk_detect_jni.qti.vendor # Needed by CNE app
