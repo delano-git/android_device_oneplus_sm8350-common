@@ -117,6 +117,7 @@ PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
+    gralloc.qcom \
     init.qti.display_boot.rc \
     init.qti.display_boot.sh \
     libmemutils \
