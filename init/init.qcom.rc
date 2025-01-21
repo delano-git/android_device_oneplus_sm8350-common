@@ -348,6 +348,8 @@ on post-fs-data
     #Create SWAP related dirs
     mkdir /data/vendor/swap 0770 root system
     chmod 2770 /data/vendor/swap
+    # Mount swap partitions specified in fstab
+    swapon_all /vendor/etc/fstab.default
 
     # Create vpp directory
     mkdir /data/vendor/vpp 0770 media media
